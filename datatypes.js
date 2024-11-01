@@ -1,0 +1,5 @@
+console.log(typeof thisisString)
+console.log(typeof thisisNumber)
+console.log(typeof thisisBoolean)
+console.log(typeof thisisUndefined)
+console.log(typeof thisisNull)
