@@ -335,9 +335,19 @@
 //     console.log(b)
 // }
 
-let a=3, d=3, l=999;
-let n=(l-a)/d+1;
-let s=(n/2)*(a+l)
-console.log(s)
+// let a=3, d=3, l=999;
+// let n=(l-a)/d+1;
+// let s=(n/2)*(a+l)
+// console.log(s)
+
+// let pattern ='';
+// let i=0;
+// while(i<9){
+//   i+=1;
+//   pattern+="*";
+//   console.log(pattern);
+// }
+
+
 
 
