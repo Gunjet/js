@@ -376,19 +376,17 @@
 //   console.log(multify)
 
 
-let n=4
-a=0
-
-if(n%2==0){
-  while(n>0){
-    n=n/2
+let n=6, a=0
+while(n!=1){
+  if(n%2==0){
+    n=n/2;
     a++
+  }else{
+    n=((n*3)+1)
+    n++
   }
-  console.log(a)
-} else{
-  console.log(n*3+1)
-}
-
+} 
+console.log(a)
   
 
 
