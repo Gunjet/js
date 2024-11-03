@@ -349,5 +349,47 @@
 // }
 
 
+// let i=0
+// while(i<37){
+//   i+=1
+// if(i%5===0){
+//   console.log(i)
+// }
+// }
+ 
+
+// let a=2, b=7, c=4, d=9
+// let multify=1
+
+//   if(a%2==0){
+//     multify*=a
+//   }
+//   if(b%2==0){
+//     multify*=b
+//   }
+//   if(c%2==0){
+//     multify*=c
+//   }
+//   if(d%2==0){
+//     multify*=d
+//   }
+//   console.log(multify)
+
+
+let n=4
+a=0
+
+if(n%2==0){
+  while(n>0){
+    n=n/2
+    a++
+  }
+  console.log(a)
+} else{
+  console.log(n*3+1)
+}
+
+  
+
 
 
