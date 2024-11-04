@@ -516,48 +516,48 @@
 // } 
 // console.log(a)
 for(let n=4, a=0;n!=1;){
-  if(n%2==0){
-    n=n/2;
-    a++
-  }else{
-    n=((n*3)+1)
-    a++
+    if(n%2==0){
+      n=n/2;
+      a++
+    }else{
+      n=((n*3)+1)
+      a++
+    }
   }
-}
-console.log(a)
-
-// 27. Өгөгдсөн эерэг тооны тэгш цифрүүдийн үржвэр болон
-//  сондгой цифрүүдийн нийлбэрийн зөрүүг олоорой.
-// let a=7, b=4, c=9, d=2
-// let multify=1
-// let sum=0
-
-// if(a%2==0){
-//   multify*=a
-// }
-// if(b%2==0){
-//   multify*=b
-// }
-// if(c%2==0){
-//   multify*=c
-// }
-// if(d%2==0){
-//   multify*=d
-// }
-
-// if(a%2==0){
-//   console.log("")
-// } else(sum+=a)
-// if(b%2==0){
-//   console.log("")
-// } else(sum+=b)
-// if(c%2==0){
-//   console.log("")
-// } else(sum+=c)
-// if(d%2==0){
-//   console.log("")
-// } else(sum+=d)
-
-// console.log(sum-multify)
-
-
+  console.log(a)
+  
+  // 27. Өгөгдсөн эерэг тооны тэгш цифрүүдийн үржвэр болон
+  //  сондгой цифрүүдийн нийлбэрийн зөрүүг олоорой.
+  // let a=7, b=4, c=9, d=2
+  // let multify=1
+  // let sum=0
+  
+  // if(a%2==0){
+  //   multify*=a
+  // }
+  // if(b%2==0){
+  //   multify*=b
+  // }
+  // if(c%2==0){
+  //   multify*=c
+  // }
+  // if(d%2==0){
+  //   multify*=d
+  // }
+  
+  // if(a%2==0){
+  //   console.log("")
+  // } else(sum+=a)
+  // if(b%2==0){
+  //   console.log("")
+  // } else(sum+=b)
+  // if(c%2==0){
+  //   console.log("")
+  // } else(sum+=c)
+  // if(d%2==0){
+  //   console.log("")
+  // } else(sum+=d)
+  
+  // console.log(sum-multify)
+  
+  

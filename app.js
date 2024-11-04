@@ -10,7 +10,7 @@
 // console.log(firstName, message);
 
 // number
-let age="30";
+let age="30"
 age="15"
 
 
