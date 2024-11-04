@@ -168,6 +168,7 @@
 //   console.log("hey")
 // }
 
+
 // let count=0
 // while(count<5){
 //     count=count+1
@@ -238,33 +239,35 @@
 
 // let number=4
 // let count=0
-// let multipy=0
+// let multiply=0
 // while (count<10){
 //     count=count+1;
-//     multipy=count*number;
-//     console.log(number, '*', count, "=", multipy)
+//     multiply=count*number;
+//     console.log(number, '*', count, "=", multiply)
 // }
-// for(let number=4,count=0,multipy=0;count<10;){
+// for(let number=4,count=0,multiply=0;count<10;){
 //      count+=1
-//      multipy=count*number
-//      console.log(number, '*', count, "=", multipy)
+//      multiply=count*number
+//      console.log(number, '*', count, "=", multiply)
 // }
 
 // let n=461,
 // reversed=""
-// while(n>0){
+// while(n>0){lastDigit=n%10
 //     let lastDigit=n%10;
 //     reversed+=lastDigit;
 //     n=Math.floor(n/10)
 // }
 // console.log(reversed)
 
-// for(let n=461,reversed="";n>0; lastDigit=n%10){
+// let reversed=""
+// for(let n=461;n>0;  n=Math.floor(n/10)){
+//   let  lastDigit=n%10
 //  reversed+=lastDigit
-//  n=Math.floor(n/10);
+
 // }
-// console.log(reversed)
-// ?????????????????????????????????????????
+// console.log(reversed) 
+
 
 
 
@@ -308,29 +311,33 @@
 // const budget=100;
 // let totalExpense=0, day=1
 // while(totalExpense<=budget){
-//     let dayExpense;
+//     let dayExpense=0;
 //     if(day<=5){
-//         dayExpense=5;
+//         dayExpense+=5;
 //     } else if(day>=5 && day <=7){
-//         dayExpense=10;
+//         dayExpense+=10;
 //     }
 //     totalExpense+=dayExpense
 
 //     if(totalExpense>=80 && totalExpense<=100){
 //         console.log("Таны нийт зардал 100$ руу ойртож байна шүү")
-//     } else if(totalExpense>99){
+//     } else if(totalExpense>=100){
 //         console.log("Та зардлын хязгаарт хүрлээ!")
 //     }
 //     day++
 
-//     if(day>=7){
+//     if(day==7){
 //       day=1;
 //     }
 
 // }
 // console.log(totalExpense)
 
-// for(let budget=100; totalExpense=0, day=1;totalExpense<=budget, dayExpense,  totalExpense+=dayExpense){
+// let budget=100,
+// day=1,
+// totalExpense=0;
+// let dayExpense=0;
+// for(totalExpense;totalExpense<=budget; totalExpense+=dayExpense){
 //   if(day<=5){
 //       dayExpense=5;
 //   } else if(day>=5 && day <=7){
@@ -339,16 +346,19 @@
 
 //   if(totalExpense>=80 && totalExpense<=100){
 //       console.log("Таны нийт зардал 100$ руу ойртож байна шүү")
-//   } else if(totalExpense>99){
-//       console.log("Та зардлын хязгаарт хүрлээ!")
-//   }
 //   day++
+//   }
 
 //   if(day>=7){
 //     day=1;
 //   }
 // }
-// console.log(totalExpense)???????????????????????????????
+// if(totalExpense>=100){
+//     console.log("Та зардлын хязгаарт хүрлээ!")
+//   }
+// console.log(totalExpense)
+
+
 
 // 2. Кофе шопын урамшууллын карт (Coffee Shop Punch Card)
 // Кофе шоп урамшууллын карттай бөгөөд 10 аяга кофе авсны дараа үнэгүй кофе авах боломжтой.
@@ -478,25 +488,24 @@
 
 
 
-
 // 23. Өгөгдсөн эерэг тооны тэгш 
 // цифрүүдийн үржвэрийг олно уу
 // let a=2, b=7, c=4, d=9
-// let multify=1
+// let multiply=1
 
   // if(a%2==0){
-  //   multify*=a
+  //   multiply*=a
   // }
   // if(b%2==0){
-  //   multify*=b
+  //   multiply*=b
   // }
   // if(c%2==0){
-  //   multify*=c
+  //   multiply*=c
   // }
   // if(d%2==0){
-  //   multify*=d
+  //   multiply*=d
   // }
-  // console.log(multify)
+  // console.log(multiply)
 
 
 
@@ -515,34 +524,34 @@
 //   }
 // } 
 // console.log(a)
-for(let n=4, a=0;n!=1;){
-    if(n%2==0){
-      n=n/2;
-      a++
-    }else{
-      n=((n*3)+1)
-      a++
-    }
-  }
-  console.log(a)
+// for(let n=4, a=0;n!=1;){
+//     if(n%2==0){
+//       n=n/2;
+//       a++
+//     }else{
+//       n=((n*3)+1)
+//       a++
+//     }
+//   }
+//   console.log(a)
   
   // 27. Өгөгдсөн эерэг тооны тэгш цифрүүдийн үржвэр болон
   //  сондгой цифрүүдийн нийлбэрийн зөрүүг олоорой.
   // let a=7, b=4, c=9, d=2
-  // let multify=1
+  // let multiply=1
   // let sum=0
   
   // if(a%2==0){
-  //   multify*=a
+  //   multiply*=a
   // }
   // if(b%2==0){
-  //   multify*=b
+  //   multiply*=b
   // }
   // if(c%2==0){
-  //   multify*=c
+  //   multiply*=c
   // }
   // if(d%2==0){
-  //   multify*=d
+  //   multiply*=d
   // }
   
   // if(a%2==0){
@@ -558,6 +567,11 @@ for(let n=4, a=0;n!=1;){
   //   console.log("")
   // } else(sum+=d)
   
-  // console.log(sum-multify)
+  // console.log(sum-multiply)
   
   
+  let age1=26, age2=65, age3=17, age4=37, age5=21
+  let  totalAge=age1+age2+age3+age4+age5
+  let total=5
+  let avgAge=totalAge/total;
+  console.log(avgAge)
