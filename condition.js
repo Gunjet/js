@@ -454,13 +454,13 @@
 // let s=(n/2)*(a+l)
 // console.log(s)
 
-// let pattern ='';
-// let i=0;
-// while(i<9){
-//   i+=1;
-//   pattern+="*";
-//   console.log(pattern);
-// }
+let pattern ='';
+let i=0;
+while(i<9){
+  i+=1;
+  pattern+="*";
+  console.log(pattern);
+}
 // for(let pattern ='',i=0;i<9;){
 //   i+=1;
 //   pattern+="*";
@@ -569,9 +569,5 @@
   
   // console.log(sum-multiply)
   
-  
-  let age1=26, age2=65, age3=17, age4=37, age5=21
-  let  totalAge=age1+age2+age3+age4+age5
-  let total=5
-  let avgAge=totalAge/total;
-  console.log(avgAge)
+
+
