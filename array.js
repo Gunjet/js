@@ -14,7 +14,7 @@
 // console.log(ages);
 
 // // insert last
-// ages.push(900);
+// ages.push(900); => insert last
 // console.group(ages);
 
 // const array2=ages.slice(1,3);
@@ -51,11 +51,11 @@
 
 // 3. destinations array үүсгээд очихыг хүссэн 5 газрыг бич. Эхний газрыг устгаад шинэчилсэн array-ыг хэвлэ.
 //  Дараа нь хамгийн эхэнд нь “New York” гэсэн элемент нэмээд  шинэчилсэн array-ыг хэвлэ.
-let destinations=["a","b","c","d","e"]
-// destinations.shift()
+// let destinations=["a","b","c","d","e"]
+// destinations.shift()  => 1st
 // console.log(destinations)
-destinations.pop()
-console.log(destinations)
+// destinations.pop()  => last
+// console.log(destinations) 
 // destinations[0]=["NY"]
 // console.log(destinations)
 
@@ -137,3 +137,5 @@ console.log(destinations)
 //     }
 // }
 // console.log(odd, even)
+
+

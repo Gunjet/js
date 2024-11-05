@@ -454,13 +454,13 @@
 // let s=(n/2)*(a+l)
 // console.log(s)
 
-let pattern ='';
-let i=0;
-while(i<9){
-  i+=1;
-  pattern+="*";
-  console.log(pattern);
-}
+// let pattern ='';
+// let i=0;
+// while(i<9){
+//   i+=1;
+//   pattern+="*";
+//   console.log(pattern);
+// }
 // for(let pattern ='',i=0;i<9;){
 //   i+=1;
 //   pattern+="*";

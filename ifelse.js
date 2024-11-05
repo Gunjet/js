@@ -212,6 +212,8 @@
   // }
   // console.log(multiply)
 
+// const fullName="John"
+// const greeting="My name is " + fullName;
 
 
   // 27. Өгөгдсөн эерэг тооны тэгш цифрүүдийн үржвэр болон
