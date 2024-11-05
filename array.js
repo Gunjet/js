@@ -51,9 +51,11 @@
 
 // 3. destinations array үүсгээд очихыг хүссэн 5 газрыг бич. Эхний газрыг устгаад шинэчилсэн array-ыг хэвлэ.
 //  Дараа нь хамгийн эхэнд нь “New York” гэсэн элемент нэмээд  шинэчилсэн array-ыг хэвлэ.
-// let destinations=["a","b","c","d","e"]
+let destinations=["a","b","c","d","e"]
 // destinations.shift()
 // console.log(destinations)
+destinations.pop()
+console.log(destinations)
 // destinations[0]=["NY"]
 // console.log(destinations)
 
@@ -79,41 +81,59 @@
 // Дээрх аrray - ийн эхэнд дурын 1 тоог нэм.
 // Дээрх аrray - ийн төгсгөлд дурын 1 тоог нэм.
 // Дээрх array доторх тоонуудын тэгш болон сондгой тоо тус тус хэд байгааг ол.
-let numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-let sum=0;
-for(let i=0; i<numbers.length; i++){
-    sum=sum+numbers[i];
-}
-console.log(sum);
+// let numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+// let sum=0;
+// for(let i=0; i<numbers.length; i++){
+//     sum=sum+numbers[i];
+// }
+// console.log(sum);
 
-let max=numbers[0]
-for(let i=0; i<numbers.length; i++){
-    if(numbers[i]>max){
-        max=numbers[i]
-    }
-}
-console.log(max);
+// let max=numbers[0]
+// for(let i=0; i<numbers.length; i++){
+//     if(numbers[i]>max){
+//         max=numbers[i]
+//     }
+// }
+// console.log(max);
 
+// let max=numbers[0]
+// for(let i=0; i<numbers.length; i++){
+//     if(numbers[i]>max){
+//         max=numbers[i]
+//     }
+// }
+// console.log(max);
 
-let min=numbers[0]
-for(let i=0; i<numbers.length; i++){
-    if(numbers[i]<min){
-        min=numbers[i]
-    }
-}
-console.log(min);
+// let min=numbers[0]
+// for(let i=0; i<numbers.length; i++){
+//     if(numbers[i]<min){
+//         min=numbers[i]
+//     }
+// }
+// console.log(min);
 
-numbers.unshift(8997);
-numbers.push(567);
-console.log(numbers)
+// numbers.unshift(8997);
+// numbers.push(567);
+// console.log(numbers)
 
-let even=0;
-odd=0;
-for(let i=0; i<numbers.length;i++){
-    if(numbers[i]%2===0){
-        even++
-    } else{
-        odd++;
-    }
-}
-console.log(odd, even)
+// let even=0;
+// odd=0;
+// for(let i=0; i<numbers.length;i++){
+//     if(numbers[i]%2===0){
+//         even++
+//     } else{
+//         odd++;
+//     }
+// }
+// console.log(odd, even)
+
+// let even=0;
+// odd=0;
+// for(let i=0; i<numbers.length;i++){
+//     if(numbers[i]%2===0){
+//         even++
+//     } else{
+//         odd++;
+//     }
+// }
+// console.log(odd, even)
