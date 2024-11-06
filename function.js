@@ -50,10 +50,10 @@
 
 // Level:medium
 // 1.
-function findDigitCount(number,digit){
-    console.log(number,'have',digit,'digits')
-}
-findDigitCount(12,2)
+// function findDigitCount(number,digit){
+//     // console.log(number,'have',digit,'digits')
+// }
+// findDigitCount()
 
 
 // 2
@@ -70,3 +70,34 @@ findDigitCount(12,2)
 
 // Level:upper
 // 1
+// let =[3,8,1,3,9,7,9,1,4,6]
+// function findPeak(orgil,n){
+//     console.log("orgil",n,orgil)
+// }
+// findPeak("397",1)
+// findPeak("791",2)
+// function findBottom(yrool,n){
+//     console.log("yrool",n,yrool)
+// }
+// findBottom("813",1)
+// findBottom("914",2)
+
+// function findPeakBottom(orgil,yrool){
+//     console.log()
+// }
+
+let arr=[3,8,1,3,9,7,9,1,4,6]
+function findPeak() {
+    let orgil=0;
+    let yrool=0;
+    for(let i=1;i<arr.length-1;i++) {
+        if(arr[i]<arr[i+1] && arr[i+1]> arr[i+2]){
+            orgil++;
+        }
+        if(arr[i]>arr[i+1] && arr[i+1]<arr[i+2]){
+            yrool++;
+        }
+    }
+    console.log(orgil,yrool)
+}
+findPeak();
