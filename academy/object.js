@@ -13,18 +13,18 @@
 
 
 // Object with loops
-const product1={
-    name:"iMac",
-    price: 1500
-};
+// const product1={
+//     name:"iMac",
+//     price: 1500
+// };
 
-const product2={
-    name:"iPhone",
-    price: 2000
-};
-const products=[product1,product2]
-console.log(products)
-console.log(products[1].price)
+// const product2={
+//     name:"iPhone",
+//     price: 2000
+// };
+// const products=[product1,product2]
+// console.log(products)
+// console.log(products[1].price)
 
 // for (let i=0; i<products.length; i++){   
 //   => i=0; products[0];
@@ -32,13 +32,13 @@ console.log(products[1].price)
 //      i=2; products[2]
 //     console.log(products[i].name);
 // }
-let totalPrice=0
-for(let i; i< products.length; i++){
-    totalPrice+=products[i].price;
+// let totalPrice=0
+// for(let i; i< products.length; i++){
+//     totalPrice+=products[i].price;
     // => i=0; products[0].price
-}
-let avgPrice=totalPrice / products.length;
-console.log(totalPrice)
+// }
+// let avgPrice=totalPrice / products.length;
+// console.log(totalPrice)
 
 
 
@@ -51,13 +51,14 @@ console.log(totalPrice)
 
 // function filterBooksByYear(year){
 //     let filteredBooks=[];
-// for(let i; i<books.length; i++){
-//     const thatBooksYear=books[i]
-//     if(thatBooksYear>=filterYear){
+// for(let i = 0; i<books.length; i++){
+//     if(books[i].year>=year){
 //         filteredBooks.push(books[i]);
 //     }
 //    }
 //    return filteredBooks;
 // }
-// const filteredBooks=[filterBooksByYear(1980)];
+// const filteredBooks=[filterBooksByYear(1967)];
 // console.log(filteredBooks);
+
+

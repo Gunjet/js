@@ -86,18 +86,18 @@
 //     console.log()
 // }
 
-let arr=[3,8,1,3,9,7,9,1,4,6]
-function findPeak() {
-    let orgil=0;
-    let yrool=0;
-    for(let i=1;i<arr.length-1;i++) {
-        if(arr[i]<arr[i+1] && arr[i+1]> arr[i+2]){
-            orgil++;
-        }
-        if(arr[i]>arr[i+1] && arr[i+1]<arr[i+2]){
-            yrool++;
-        }
-    }
-    console.log(orgil,yrool)
-}
-findPeak();
+// let arr=[3,8,1,3,9,7,9,1,4,6]
+// function findPeak() {
+//     let orgil=0;
+//     let yrool=0;
+//     for(let i=1;i<arr.length-1;i++) {
+//         if(arr[i]<arr[i+1] && arr[i+1]> arr[i+2]){
+//             orgil++;
+//         }
+//         if(arr[i]>arr[i+1] && arr[i+1]<arr[i+2]){
+//             yrool++;
+//         }
+//     }
+//     console.log(orgil,yrool)
+// }
+// findPeak();
