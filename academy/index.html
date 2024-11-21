@@ -3,59 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todos</title>
+    <title>minishop</title>
+
+    <style>
+        * {
+          font-family: "Montserrat", sans-serif;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+        li {
+          margin: 10px 0;
+          font-size: 1.1em;
+          line-height: 1.6;
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 10px;
+        }
+        li span {
+          display: block;
+          font-size: 12px;
+        }
+      </style>
 </head>
 <body>
-    <!-- <div>Hello</div>
+    <ul id="productList"></ul>
+</body>
+<script>
+    const products = [
+      { name: "Сүү", price: 4000, category: "Хүнс", rating: 4.6 },
+      { name: "Дэвтэр", price: 2000, category: "Бусад", rating: 4.2 },
+      { name: "Чихэр", price: 500, category: "Хүнс", rating: 3.9 },
+      { name: "Ус", price: 1500, category: "Хүнс", rating: 5 },
+      { name: "Шоколад", price: 6000, category: "Хүнс", rating: 4.2 },
+      { name: "Алчуур", price: 2500, category: "Ариун цэвэр", rating: 3.5 },
+      { name: "Ногоо", price: 1500, category: "Хүнс", rating: 4.7 },
+      { name: "Саван", price: 2000, category: "Ариун цэвэр", rating: 3 },
+]
+    // Жагсаалтыг үүсгэх үндсэн функц
+    function renderProductList() {
+      const container = document.getElementById("productList");
+     products.map(renderProduct)
 
-    <button onclick="sayHello()">Say hello</button>
-    <button onclick="printName()">PRINT NAME</button>
-    <button onclick="deleteName()">DELETE NAME</button>
-    <button onclick="getName()">GET NAME</button>
-    <div id="area"></div>
+      // 1 бүтээгдэхүүн render
+      function renderProduct(product) {
+        const li = document.createElement("li");
+        li.innerText = product.name
+        container.appendChild(li)
 
-    <div id="name-container" style="font-size: large; color:blue"></div> -->
-    <button onclick="addTask">Add</button>
-    <div id="tasks"></div>
+        const discountedPrice = document.createElement("li");
+        discountedPrice.innerText = `Original Price: ${product.price} MNT`;
+        container.appendChild(discountedPrice)
+        //Бодолт хийгээд үргэлжлүүлээрэй
+        discountedPrice.innerText += `Discounted Price: ${calculateDiscount(product.price)} MNT`;
+        li.appendChild(discountedPrice);
+         container.appendChild(li);
+      }
 
+      // Хямдралын үнэ тооцох функц
+      function calculateDiscount(price) {
+        // 15%-ийн хямдрал. Бодолт хийгээд үргэлжлүүлээрэй
+        const discount = 0.15;
+        const discountedPrice = price * (1 - discount);
+        return discountedPrice.toFixed(2);
+      }
+
+      // Үнэлгээнд од нэмэх функц
+      function getStarRating(rating) {
+        //  Бодолт хийгээд үргэлжлүүлээрэй
+      }
+
+    }
+    renderProductList();
+  </script>
+</html> 
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <style>
+        * {
+          font-family: "Montserrat", sans-serif;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+        li {
+          margin: 10px 0;
+          font-size: 1.1em;
+          line-height: 1.6;
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 10px;
+        }
+        li span {
+          display: block;
+          font-size: 12px;
+        }
+        .stars {
+          color: gold;
+        }
+    </style>
+</head>
+<body>
+    <ul id="productList"></ul>
+</body>
     <script>
-        // function sayHello(){
-        //     alert("Hello World!");
-        // }
-        // function getName(){
-        //     let namecontainer=prompt("")
-        //     document.getElementById("area").textContent = namecontainer
-        // }
-        // function printName(){
-        //     const nameContainerElement=document.getElementById("name-container");
-        //     nameContainerElement.innerText="John Doe";
-        // }
-        // function deleteName(){
-        //     let dissapear = "";
-        //     const nameContainerElement=document.getElementById("name-container");
-        //     nameContainerElement.innerText="";
-        //     document.getElementById("area").innerHTML = dissapear;
-        // }
-
-        const tasks=[
-            {name:"Shalaa ugaah", status:"todo"},
-            {name:"Huvtsas ugaah", status:"todo"},
-            {name:"Duugee ugaah", status:"todo"}
+        const products = [
+            { name: "Сүү", price: 4000, category: "Хүнс", rating: 4.6 },
+            { name: "Дэвтэр", price: 2000, category: "Бусад", rating: 4.2 },
+            { name: "Чихэр", price: 500, category: "Хүнс", rating: 3.9 },
+            { name: "Ус", price: 1500, category: "Хүнс", rating: 5 },
+            { name: "Шоколад", price: 6000, category: "Хүнс", rating: 4.2 },
+            { name: "Алчуур", price: 2500, category: "Ариун цэвэр", rating: 3.5 },
+            { name: "Ногоо", price: 1500, category: "Хүнс", rating: 4.7 },
+            { name: "Саван", price: 2000, category: "Ариун цэвэр", rating: 3 }
         ];
 
-        function render(){
-            const output=document.getElementById("tasks");
-            output.innerHTML="";
-            for (let i=0; i<tasks.length; i++){
-            output.innerHTML+='<div class="task">' +tasks[i].name+"</div>";
+        function renderProductList() {
+            const container = document.getElementById("productList");
+            products.map(renderProduct);
+
+            function renderProduct(product) {
+                const li = document.createElement("li");
+                const productName = document.createElement("li");
+                productName.innerText = product.name;("span")
+                li.appendChild(productName);
+                const category = document.createElement("span");
+                category.innerText = `Category: ${product.category}`;
+                li.appendChild(category);
+                const starRating = document.createElement("span");
+                starRating.innerHTML = `Rating: ${getStarRating(product.rating)} (${product.rating})`;
+                starRating.classList.add("stars");
+                li.appendChild(starRating);
+                const originalPrice = document.createElement("span");
+                originalPrice.innerText = `Original Price: ${product.price} MNT`;
+                li.appendChild(originalPrice);
+                const discountedPrice = document.createElement("span");
+                discountedPrice.innerText = `Discounted Price: ${calculateDiscount(product.price)} MNT`;
+                li.appendChild(discountedPrice);
+                container.appendChild(li);
+            }
+
+            function calculateDiscount(price) {
+                const discount = 0.15;
+                const discountedPrice = price * (1 - discount);
+                return discountedPrice.toFixed(2);
             }
         }
-        function addTask(){
-            const name=prompt();
-            tasks.push({name:name,status:"todo"});
-            render();
-        }
-        render();
+
+        renderProductList();
     </script>
-</body>
-</html>
+
+</html> -->
+
+  
+  
